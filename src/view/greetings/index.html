@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Greetings, human!{% endblock %}</title>
+  </head>
+  <body>
+    <p>I am an alien!</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Greeting</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% if greetings %}
+          {% for greeting in greetings %}
+            <tr>
+              <td>{{greeting.id}}</td>
+              <td>{{greeting.message}}</td>
+            </tr>
+          {% endfor %}
+        {% endif %}
+      </tbody>
+    </table>
+  </body>
+</html>
