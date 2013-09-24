@@ -1,0 +1,2 @@
+-module(greeting, [Id, Message]).
+-compile(export_all).
