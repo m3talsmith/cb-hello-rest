@@ -3,3 +3,4 @@ log/*.log
 *.dump
 *.swp
 *.swo
+ebin
